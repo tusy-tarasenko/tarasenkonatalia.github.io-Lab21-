@@ -47,7 +47,7 @@ input, select, textarea {
 * { font-family:'Monaco'; }
 
 body{
-    background-image: url(/Users/nataliatarasenko/Desktop/Веббб/dog2.jpg);
+    background-image: url(dog2.jpg);
     background-size: cover;
     background-position: center;
     height: 800px;
