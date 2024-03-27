@@ -1,0 +1,55 @@
+h1{
+    text-align: center;
+    color: rgba(255, 0, 183, 0.333);
+}
+
+.block {
+    max-width: 23%;
+    margin: 0 auto;
+    border: 3px solid azure;
+    padding: 10px;
+    background-color: rgba(198, 40, 175, 0.356);
+    border-radius: 15px;
+}
+
+.form-group {
+    margin: 20px 0;
+    font-size: 1rem;
+    color: azure;
+}
+
+.special{
+    border: 1px solid azure;
+    padding: 3px;
+    border-radius: 6px;
+
+}
+
+.text{
+    font-weight: 700;
+}
+
+button{
+    color: white;
+    font-size: large;
+    background-color: rgba(255, 0, 183, 0.333);
+    margin-top: 10px;
+    margin-left: 15%;
+    width: 6cm;
+    height: 1cm;
+    border: 2px solid azure;
+    border-radius: 15px;
+}
+
+input, select, textarea {
+    font-size: large;
+}
+* { font-family:'Monaco'; }
+
+body{
+    background-image: url(/Users/nataliatarasenko/Desktop/Веббб/dog2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    background-repeat: no-repeat;
+}

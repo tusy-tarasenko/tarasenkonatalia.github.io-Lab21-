@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма обратной связи</title>
+    <link rel="stylesheet" href="style_laba21.css">
+</head>
+<body>
+<main>
+    <h1>Форма обратной связи</h1>
+    <div class="block">
+    <form method="post" action="https://httpbin.org/post">
+
+        <!--p>ФИО</p-->
+        <div class="form-group">
+            <div class="text"><label for="fio">ФИО</label></div>
+            <input 
+                type="text" 
+                name="fio" 
+                id="fio" 
+                placeholder="Введите ФИО:" required>
+        </div>
+
+        <!--p>E-male</p-->
+        <div class="form-group">
+            <div class="text"><label for="mail">Адрес электронной почты</label></div>
+            <input 
+                type="email" 
+                name="mail" 
+                id="mail" 
+                placeholder="Введите e-mail:" required>
+        </div>
+
+        <!--p>Откуда узнали?</p-->
+        <div class="form-group">
+            <div class="special">
+                <div class="text"><label class="main">Откудда узнали о нас?</label></div>
+
+            <input 
+                type="radio" name="how" id="friends">
+            <label for="friends">Рассказали друзья</label><br>
+
+            <input 
+                type="radio" name="how" id="intern">
+            <label for="intern">Реклама в интернете</label>
+            </div>
+        </div>
+
+        <!--p>Категория обращения</p-->
+        <div class="form-group">
+            <div class="text"><label for="celect" class="main">Категория обращения</label></div>
+            <select id="celect" name="celect-category">
+                <option value="proposal">Предложение</option>
+                <option value="complaint">Жалоба</option>
+            </select>
+        </div>
+
+        <!--p>Сообщение</p-->
+        <div class="form-group">
+            <div class="text"><label for="com" class="main">Текст сообщения</label></div>
+            <textarea id="com" name="comment" placeholder="Введите текст сообщения:"></textarea>
+        </div>
+
+        <!--p>Файл</p-->
+        <div class="form-group">
+            <div class="text"><label for="file" class="main">Вложение</label></div>
+            <input type="file" id="file">
+        </div>
+
+        <!--p>Согласие</p-->
+        <div class="form-group">
+            <input 
+                type="checkbox" id="agree">
+            <label for="agree">Даю согласие на обработку персональных данных</label>
+        </div>
+        <!--p>Отправить</p-->
+        <div class="form-group">
+        <button type="submit">Отправить</button>
+        </div>
+        
+    </form>
+    </div>
+</main>
+    
+</body>
+</html>
